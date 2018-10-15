@@ -16,7 +16,7 @@ export interface LevenshteinOptions {
  * @param str2 the second string.
  * @param options Use `Intl.Collator` for locale-sensitive string comparison.
  */
-export function Levenshtein(
+export function compare(
   str1: string,
   str2: string,
   options: LevenshteinOptions = {},
