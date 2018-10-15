@@ -1,0 +1,34 @@
+{
+  "name": "levenstein.js",
+  "version": "1.0.0",
+  "description": "Efficient implementation of Levenshtein algorithm  with locale-specific collator support.",
+  "main": "lib/levenshtein",
+  "types": "esm/levenshtein",
+  "module": "esm/levenshtein",
+  "scripts": {
+    "build:cjs": "tsc -p tsconfig.json",
+    "build:esm": "tsc -p tsconfig.esm.json",
+    "build": "rm -Rf lib esm && npm run build:cjs && npm run build:esm",
+    "prepublishOnly": "npm run build",
+    "prerelease": "npm run test",
+    "release": "standard-version",
+    "postrelease": "git push --follow-tags origin master && npm publish --access public",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "files": [
+    "lib",
+    "esm",
+    "src"
+  ],
+  "keywords": [
+    "levenshtein",
+    "distance",
+    "string"
+  ],
+  "author": "Ramesh Nair <ram@hiddentao.com> (http://www.hiddentao.com/)",
+  "license": "MIT",
+  "devDependencies": {
+    "prettier": "^1.14.3",
+    "standard-version": "^4.4.0"
+  }
+}
