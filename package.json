@@ -27,6 +27,7 @@
     "string"
   ],
   "jest": {
+    "testEnvironment": "node",
     "moduleFileExtensions": [
       "ts",
       "js"
