@@ -37,6 +37,9 @@
     "testRegex": "(/__tests__/.*|(\\.|/)(test|spec))\\.(js|ts)$"
   },
   "author": "Ramesh Nair <ram@hiddentao.com> (http://www.hiddentao.com/)",
+  "contributors": [
+    "Alex Regan <alex.regan@pictalk.com>"
+  ],
   "license": "MIT",
   "devDependencies": {
     "@types/benchmark": "^1.0.31",
