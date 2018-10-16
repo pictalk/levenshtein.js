@@ -1,6 +1,6 @@
 {
   "name": "@pictalk/levenshtein.js",
-  "version": "2.0.0",
+  "version": "2.0.1",
   "description": "Efficient implementation of Levenshtein algorithm  with locale-specific collator support.",
   "main": "lib/index",
   "types": "esm/index",
