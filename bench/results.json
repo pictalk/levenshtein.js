@@ -1,0 +1,47 @@
+[
+  {
+    "hz": 51727.77200978332,
+    "result": "<Test #1> x 51,728 ops/sec ±3.21% (85 runs sampled)",
+    "name": "@pictalk/levenshtein.js"
+  },
+  {
+    "hz": 43495.22448584617,
+    "result": "<Test #3> x 43,495 ops/sec ±1.27% (92 runs sampled)",
+    "name": "levenshtein-edit-distance"
+  },
+  {
+    "hz": 17753.81817508323,
+    "result": "<Test #7> x 17,754 ops/sec ±0.67% (95 runs sampled)",
+    "name": "levenshtein-component"
+  },
+  {
+    "hz": 17515.354348343055,
+    "result": "<Test #4> x 17,515 ops/sec ±2.88% (83 runs sampled)",
+    "name": "fast-levenshtein"
+  },
+  {
+    "hz": 6046.944826243118,
+    "result": "<Test #8> x 6,047 ops/sec ±1.19% (93 runs sampled)",
+    "name": "levenshtein-deltas"
+  },
+  {
+    "hz": 5156.8402333814,
+    "result": "<Test #6> x 5,157 ops/sec ±1.92% (88 runs sampled)",
+    "name": "levenshtein"
+  },
+  {
+    "hz": 1176.9458092198674,
+    "result": "<Test #2> x 1,177 ops/sec ±1.75% (90 runs sampled)",
+    "name": "@pictalk/levenshtein.js (collated)"
+  },
+  {
+    "hz": 1094.1874473940427,
+    "result": "<Test #5> x 1,094 ops/sec ±1.55% (90 runs sampled)",
+    "name": "fast-levenshtein (collated)"
+  },
+  {
+    "hz": 780.2330145918392,
+    "result": "<Test #9> x 780 ops/sec ±1.69% (85 runs sampled)",
+    "name": "natural"
+  }
+]
