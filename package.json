@@ -2,9 +2,9 @@
   "name": "@pictalk/levenshtein.js",
   "version": "2.0.0",
   "description": "Efficient implementation of Levenshtein algorithm  with locale-specific collator support.",
-  "main": "lib/levenshtein",
-  "types": "esm/levenshtein",
-  "module": "esm/levenshtein",
+  "main": "lib/index",
+  "types": "esm/index",
+  "module": "esm/index",
   "scripts": {
     "build:cjs": "tsc -p tsconfig.json",
     "build:esm": "tsc -p tsconfig.esm.json",
