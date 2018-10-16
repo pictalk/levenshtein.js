@@ -19,6 +19,7 @@
   "files": [
     "lib",
     "esm",
+    "flow-typed",
     "src"
   ],
   "keywords": [

@@ -12,26 +12,26 @@ export interface LevenshteinOptions {
  * Calculate levenshtein distance of the two strings.
  * Based on the algorithm at http://en.wikipedia.org/wiki/Levenshtein_distance.
  *
- * @param str1 the first string.
- * @param str2 the second string.
+ * @param a the first string.
+ * @param b the second string.
  * @param options Use `Intl.Collator` for locale-sensitive string comparison.
  */
 export function compare(
-  str1: string,
-  str2: string,
+  a: string,
+  b: string,
   options: LevenshteinOptions = {},
 ) {
   let useCollator = Boolean(options.useCollator);
 
-  let str1Len = str1.length;
-  let str2Len = str2.length;
+  let a_len = a.length;
+  let b_len = b.length;
 
   // base cases
-  if (str1Len === 0) {
-    return str2Len;
+  if (a_len === 0) {
+    return b_len;
   }
-  if (str2Len === 0) {
-    return str1Len;
+  if (b_len === 0) {
+    return a_len;
   }
 
   // two rows
@@ -42,26 +42,25 @@ export function compare(
   let tmp: number;
 
   // initialise previous row
-  for (i = 0; i < str2Len; ++i) {
+  for (i = 0; i < b_len; ++i) {
     prevRow[i] = i;
-    str2Char[i] = str2.charCodeAt(i);
+    str2Char[i] = b.charCodeAt(i);
   }
 
-  prevRow[str2Len] = str2Len;
+  prevRow[b_len] = b_len;
 
   let strCmp: boolean;
   if (useCollator) {
     // calculate current row distance from previous row using collator
-    for (i = 0; i < str1Len; ++i) {
+    for (i = 0; i < a_len; ++i) {
       nextCol = i + 1;
 
-      for (j = 0; j < str2Len; ++j) {
+      for (j = 0; j < b_len; ++j) {
         curCol = nextCol;
 
         // substitution
         strCmp =
-          0 ===
-          collator.compare(str1.charAt(i), String.fromCharCode(str2Char[j]));
+          0 === collator.compare(a.charAt(i), String.fromCharCode(str2Char[j]));
 
         nextCol = prevRow[j] + (strCmp ? 0 : 1);
 
@@ -88,14 +87,14 @@ export function compare(
   }
 
   // calculate current row distance from previous row without collator
-  for (i = 0; i < str1Len; ++i) {
+  for (i = 0; i < a_len; ++i) {
     nextCol = i + 1;
 
-    for (j = 0; j < str2Len; ++j) {
+    for (j = 0; j < b_len; ++j) {
       curCol = nextCol;
 
       // substitution
-      strCmp = str1.charCodeAt(i) === str2Char[j];
+      strCmp = a.charCodeAt(i) === str2Char[j];
 
       nextCol = prevRow[j] + (strCmp ? 0 : 1);
 
