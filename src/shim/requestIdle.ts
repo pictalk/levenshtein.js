@@ -21,8 +21,11 @@ class $IdleDeadline implements IdleDeadline {
   }
 }
 
-// @ts-ignore
-const hasBuiltIn = typeof requestIdleCallback === "function";
+const hasBuiltIn =
+  // @ts-ignore
+  typeof requestIdleCallback === "function" &&
+  // @ts-ignore
+  typeof cancelIdleCallback === "function";
 
 const $g =
   (typeof self === "object" && self.self === self && self) ||
