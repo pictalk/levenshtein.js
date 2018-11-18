@@ -1,47 +1,47 @@
 [
   {
-    "hz": 51727.77200978332,
-    "result": "<Test #1> x 51,728 ops/sec ±3.21% (85 runs sampled)",
+    "hz": 65337.603109090465,
+    "result": "<Test #1> x 65,338 ops/sec ±0.41% (93 runs sampled)",
     "name": "@pictalk/levenshtein.js"
   },
   {
-    "hz": 43495.22448584617,
-    "result": "<Test #3> x 43,495 ops/sec ±1.27% (92 runs sampled)",
+    "hz": 59328.97790835916,
+    "result": "<Test #3> x 59,329 ops/sec ±0.29% (95 runs sampled)",
     "name": "levenshtein-edit-distance"
   },
   {
-    "hz": 17753.81817508323,
-    "result": "<Test #7> x 17,754 ops/sec ±0.67% (95 runs sampled)",
-    "name": "levenshtein-component"
-  },
-  {
-    "hz": 17515.354348343055,
-    "result": "<Test #4> x 17,515 ops/sec ±2.88% (83 runs sampled)",
+    "hz": 37608.61480300847,
+    "result": "<Test #4> x 37,609 ops/sec ±0.50% (90 runs sampled)",
     "name": "fast-levenshtein"
   },
   {
-    "hz": 6046.944826243118,
-    "result": "<Test #8> x 6,047 ops/sec ±1.19% (93 runs sampled)",
-    "name": "levenshtein-deltas"
+    "hz": 31728.49039633694,
+    "result": "<Test #7> x 31,728 ops/sec ±2.60% (88 runs sampled)",
+    "name": "levenshtein-component"
   },
   {
-    "hz": 5156.8402333814,
-    "result": "<Test #6> x 5,157 ops/sec ±1.92% (88 runs sampled)",
+    "hz": 14991.056216499546,
+    "result": "<Test #6> x 14,991 ops/sec ±3.68% (92 runs sampled)",
     "name": "levenshtein"
   },
   {
-    "hz": 1176.9458092198674,
-    "result": "<Test #2> x 1,177 ops/sec ±1.75% (90 runs sampled)",
+    "hz": 8327.089271671393,
+    "result": "<Test #8> x 8,327 ops/sec ±0.44% (92 runs sampled)",
+    "name": "levenshtein-deltas"
+  },
+  {
+    "hz": 1720.0118106907737,
+    "result": "<Test #9> x 1,720 ops/sec ±3.82% (89 runs sampled)",
+    "name": "natural"
+  },
+  {
+    "hz": 1216.3569085047843,
+    "result": "<Test #2> x 1,216 ops/sec ±2.72% (91 runs sampled)",
     "name": "@pictalk/levenshtein.js (collated)"
   },
   {
-    "hz": 1094.1874473940427,
-    "result": "<Test #5> x 1,094 ops/sec ±1.55% (90 runs sampled)",
+    "hz": 1188.3212191359773,
+    "result": "<Test #5> x 1,188 ops/sec ±0.42% (94 runs sampled)",
     "name": "fast-levenshtein (collated)"
-  },
-  {
-    "hz": 780.2330145918392,
-    "result": "<Test #9> x 780 ops/sec ±1.69% (85 runs sampled)",
-    "name": "natural"
   }
 ]
